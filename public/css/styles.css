@@ -1,0 +1,69 @@
+/*
+---------------------------------
+Widgets
+---------------------------------
+*/
+@import url(./widgets.css);
+
+/*
+---------------------------------
+About Styles
+---------------------------------
+*/
+@import url(./styles_sheets/about_style.css);
+
+/*
+---------------------------------
+Blog Home Styles
+---------------------------------
+*/
+@import url(./styles_sheets/blog-home_style.css);
+
+/*
+---------------------------------
+Blog Post Styles
+---------------------------------
+*/
+@import url(./styles_sheets/blog-post_style.css);
+
+/*
+---------------------------------
+Contact Styles
+---------------------------------
+*/
+@import url(./styles_sheets/contact_style.css);
+
+/*
+---------------------------------
+Faq Styles
+---------------------------------
+*/
+@import url(./styles_sheets/faq_style.css);
+
+/*
+---------------------------------
+Index Styles
+---------------------------------
+*/
+@import url(./styles_sheets/index_style.css);
+
+/*
+---------------------------------
+Portafolio Item Styles
+---------------------------------
+*/
+@import url(./styles_sheets/portafolio-item_style.css);
+
+/*
+---------------------------------
+Portafolio Overview Styles
+---------------------------------
+*/
+@import url(./styles_sheets/portafolio-overview_style.css);
+
+/*
+---------------------------------
+Princing Styles
+---------------------------------
+*/
+@import url(./styles_sheets/princing_style.css);
