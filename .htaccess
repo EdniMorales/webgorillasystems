@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Redirección HTTP a HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^teampcmx\.com [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Manejo de URLs amigables:
+# Solo si no es un archivo ni directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Reescribir URLs en el formato: dominio.com/controller/action
+RewriteRule ^([^/]+)/([^/]+)/?$ index.php?controller=$1&action=$2 [L,QSA]
+
+# Puedes descomentar esta línea para manejar errores 404 personalizados
+# ErrorDocument 404 /error/
+
+</IfModule>
+
+# Páginas de error personalizadas
+ErrorDocument 301 /puntoDeVenta//Errors/301.php
+ErrorDocument 302 /puntoDeVenta//Errors/302.php
+ErrorDocument 400 /puntoDeVenta//Errors/400.php
+ErrorDocument 401 /puntoDeVenta//Errors/401.php
+ErrorDocument 403 /puntoDeVenta//Errors/403.php
+ErrorDocument 404 /puntoDeVenta/Errors/404.php
+ErrorDocument 500 /puntoDeVenta//Errors/500.php
+ErrorDocument 502 /puntoDeVenta//Errors/502.php
+ErrorDocument 503 /puntoDeVenta//Errors/503.php
+
+# Configuración de PHP (generada por cPanel)
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
