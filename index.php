@@ -69,10 +69,12 @@ if ($route !== false) {
     if (class_exists($controllerName)) {
         $controlador = new $controllerName();
 
+        //var_dump($controlador);
+
         if (method_exists($controlador, $methodName)) {
             $controlador->$methodName();
         } else {
-            //show_error();
+            show_error();
         }
     } else {
         show_error();
