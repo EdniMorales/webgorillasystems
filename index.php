@@ -7,7 +7,7 @@ require_once __DIR__ . '../config/routes.php';  // <-- incluye tu route.php
 
 // Si no vienen parámetros, redirige a la ruta por defecto
 if (!isset($_GET['controller']) && !isset($_GET['action'])) {
-    header('Location: ' . base_url . 'Login/login');
+    header('Location: ' . base_url . 'Home/home');
     exit();
 }
 
@@ -24,7 +24,39 @@ function show_error(){
     $error->index();
 }
 
-// Obtenemos controller y action de GET (puedes poner valores por defecto si quieres)
+set_error_handler(function($errno, $errstr, $errfile, $errline) {
+
+    $error = new ErrorController();
+
+    switch ($errno) {
+        case E_USER_WARNING:
+        case E_WARNING:
+            $error->warning($errstr, $errfile, $errline);
+            break;
+
+        case E_USER_NOTICE:
+        case E_NOTICE:
+            $error->notice($errstr, $errfile, $errline);
+            break;
+
+        case E_USER_ERROR:
+        case E_ERROR:
+        default:
+            $error->internal($errstr, $errfile, $errline);
+            break;
+    }
+
+    exit();
+});
+
+set_exception_handler(function($exception) {
+    $error = new ErrorController();
+    $error->exception($exception);
+    exit();
+});
+
+
+// Obtenemos controller y action de GET (se puede poner valores por defecto si se requiere)
 $controller = $_GET['controller'] ?? '';
 $action = $_GET['action'] ?? '';
 
@@ -40,7 +72,7 @@ if ($route !== false) {
         if (method_exists($controlador, $methodName)) {
             $controlador->$methodName();
         } else {
-            show_error();
+            //show_error();
         }
     } else {
         show_error();
@@ -53,4 +85,7 @@ if ($route !== false) {
 if (!($_GET['controller'] === 'Login' && $_GET['action'] === 'login')) {
     require_once __DIR__ . '../views/layouts/footer.php';
 }
+
+// Colocar los scripts de la pagina
+require_once __DIR__ . '../views/layouts/scripts.php';
 ?>

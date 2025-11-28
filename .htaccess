@@ -14,23 +14,26 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 # Reescribir URLs en el formato: dominio.com/controller/action
+RewriteRule ^([^/]+)/([^/]+)/(.*)$ index.php?controller=$1&action=$2&params=$3 [L,QSA]
+
+# /controller/action
 RewriteRule ^([^/]+)/([^/]+)/?$ index.php?controller=$1&action=$2 [L,QSA]
 
-# Puedes descomentar esta línea para manejar errores 404 personalizados
-# ErrorDocument 404 /error/
+# /controller → usa acción "index"
+#RewriteRule ^([^/]+)/?$ index.php?controller=$1&action=index [L,QSA]
 
 </IfModule>
 
 # Páginas de error personalizadas
-ErrorDocument 301 /puntoDeVenta//Errors/301.php
-ErrorDocument 302 /puntoDeVenta//Errors/302.php
-ErrorDocument 400 /puntoDeVenta//Errors/400.php
-ErrorDocument 401 /puntoDeVenta//Errors/401.php
-ErrorDocument 403 /puntoDeVenta//Errors/403.php
-ErrorDocument 404 /puntoDeVenta/Errors/404.php
-ErrorDocument 500 /puntoDeVenta//Errors/500.php
-ErrorDocument 502 /puntoDeVenta//Errors/502.php
-ErrorDocument 503 /puntoDeVenta//Errors/503.php
+ErrorDocument 301 /webgorillasystems/Errors/301.php
+ErrorDocument 302 /webgorillasystems/Errors/302.php
+ErrorDocument 400 /webgorillasystems/Errors/400.php
+ErrorDocument 401 /webgorillasystems/Errors/401.php
+ErrorDocument 403 /webgorillasystems/Errors/403.php
+ErrorDocument 404 /webgorillasystems/Errors/404.php
+ErrorDocument 500 /webgorillasystems/Errors/500.php
+ErrorDocument 502 /webgorillasystems/Errors/502.php
+ErrorDocument 503 /webgorillasystems/Errors/503.php
 
 # Configuración de PHP (generada por cPanel)
 <IfModule mime_module>

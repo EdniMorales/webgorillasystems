@@ -1,11 +1,10 @@
 <?php
 function controllers_autoload($classname) {
     // Normalizar nombre de clase (mantener mayúscula inicial)
-    $classname = ucfirst($classname);
+    $basename = strtolower(str_replace('Controller','',$classname)) . '_controller.php';
 
     // Ruta absoluta al controlador
-    $ruta = __DIR__ . '/../controllers/' . $classname . '.php';
-
+    $ruta = __DIR__ . '/../controllers/' . $basename;
 
     if (file_exists($ruta)) {
         include $ruta;
