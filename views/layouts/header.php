@@ -1,6 +1,6 @@
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
                 <div class="container px-5">
                      <a class="navbar-brand"  href="<?= base_url ?>Home/home">
                     <img src="../assets/logos/gorilla-system-logo.png" alt="Bootstrap" width="200" height="85"></a>
