@@ -5,11 +5,11 @@
           >
     <!-- Section: Social media -->
     <section
-             class="d-flex justify-content-between p-4 text-white"
+             class="d-flex justify-content-between p-4 text-white "
              style="background-color: #2647b4"
              >
       <!-- Left -->
-      <div class="me-5">
+      <div class=" container">
         <span>Conéctate con nosotros en nuestras redes sociales:</span>
       </div>
       <!-- Left -->
