@@ -21,28 +21,28 @@
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Desarrollo de software a la medida de tu negocio</h2></div>
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Desarrollo de software a la medida de tu empresa</h2></div>
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                                    <h2 class="h5">Genera más ventas</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Adaptación exacta a tus procesos (sin funciones inútiles ni faltantes)</h2>
+                                    <p class="mb-0 text-justify">Un sistema a medida se diseña específicamente para la forma en que opera tu negocio: flujos de aprobación, roles de usuario, reportes clave, inventarios especiales, etc. Esto elimina el “calzador” de tener que cambiar tu forma de trabajar para adaptarte al software, y evita pagar por módulos que jamás usas.</p>
                                 </div>
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                                    <h2 class="h5">Administra completamente tu negocio</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Mayor eficiencia y productividad del equipo</h2>
+                                    <p class="mb-0 text-justify">Al tener solo las funciones que necesitas, con interfaces y automatismos diseñados para tus tareas diarias (ej. facturación automática desde producción, alertas de stock mínimo, conciliación bancaria integrada), los empleados trabajan más rápido, comenten menos errores y dedican menos tiempo a tareas manuales o parches entre sistemas.</p>
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Llega a más clientes potenciales</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Escalabilidad y evolución contigo</h2>
+                                    <p class="mb-0 text-justify">A diferencia de un software cerrado, un sistema a medida se puede ampliar y modificar cuando tu empresa crece: nuevas sucursales, integración con proveedores, más usuarios, reportes de analytics avanzados, etc. No quedas atrapado en las limitaciones de una versión estándar ni pagando costosas licencias por funcionalidades que aún no necesitas.</p>
                                 </div>
                                 <div class="col h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                                    <h2 class="h5">Amplia la visualización de tu negocio</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <h2 class="h5">Ventaja competitiva y datos estratégicos</h2>
+                                    <p class="mb-0 text-justify">Puedes incluir inteligencia de negocio (KPIs específicos de tu industria, dashboards en tiempo real, alertas predictivas) que no vienen en sistemas genéricos. Además, la información es 100% tuya (sin depender de terceros), y puedes conectar el sistema con tus proveedores, clientes o canales digitales de forma exclusiva, algo difícil de lograr con software empaquetado.</p>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                 <img class="card-img-top" src="../assets/proyectos/desarrollo-web.jpg" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">Nuevo</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Pagina web/Pedecederos</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Paginas Web</h5></a>
                                     <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -154,7 +154,7 @@
                             </div>
                             <div class="ms-xl-4">
                                 <div class="input-group mb-2">
-                                    <input class="form-control" type="text" placeholder="Registra tu Em@il" aria-label="Registra tu Em@il" aria-describedby="button-newsletter" />
+                                    <input class="form-control" type="text" placeholder="Ingresa tu email" aria-label="Ingresa tu correo electronico" aria-describedby="button-newsletter" />
                                     <button class="btn btn-outline-light" id="button-newsletter" type="button">Suscribirme</button>
                                 </div>
                                 <div class="small text-white-50">*AVISO DE PROVACIDAD DERECHOS RESERVADOS*</div>
